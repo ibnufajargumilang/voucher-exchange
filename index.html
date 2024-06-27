@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Penukaran Voucher</title>
+        <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body class="bg-gray-100 transition duration-500 ease-in-out">
+        <header class="bg-blue-600 text-white py-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <button id="menu-toggle" class="md:hidden ml-4 py-2 px-4 rounded-full font-bold hover:bg-gray-800">
+                    <i class="bi bi-list"></i>
+                </button>
+                <h1 id="voucherExchange" class="text-2xl sm:text-3xl font-bold px-4 sm:px-0">Voucher Exchange</h1>
+                <nav class="hidden md:flex md:items-center md:justify-end md:flex-1 lg:w-0">
+                    <a href="#features" id="featuresDesktop" class="mx-2">Features</a>
+                    <a href="#how-it-works" id="howItWorksDesktop" class="mx-2">How It Works</a>
+                    <a href="#payment-methods" id="paymentMethodsDesktop" class="mx-2">Payment Methods</a>
+                    <a href="#menu-contact" id="contactDesktop" class="mx-2">Contact</a>
+                </nav>
+                <button id="lang-toggle" class="ml-4 bg-white text-blue-600 py-2 px-4 rounded-full font-bold hover:bg-gray-200" data-lang="en">ID</button>
+                <button id="dark-mode-toggle" class="ml-4 bg-white text-blue-600 py-2 px-4 mx-4 rounded-full font-bold hover:bg-gray-200">
+                    <span id="dark-mode-icon">🌙</span>
+                </button>
+            </div>
+            <div id="menu-dropdown" class="hidden md:hidden bg-blue-600 text-white">
+                <a href="#features" id="features" class="block px-4 py-2">Features</a>
+                <a href="#how-it-works" id="howItWorks" class="block px-4 py-2">How It Works</a>
+                <a href="#payment-methods" id="paymentMethods" class="block px-4 py-2">Payment Methods</a>
+                <a href="#menu-contact" id="contact" class="block px-4 py-2">Contact</a>
+            </div>
+        </header>
+
+        <section id="hero" class="text-center py-20 bg-blue-500 text-white">
+            <div class="container mx-auto">
+                <h2 id="heroTitle" class="text-4xl font-bold mb-4">Tukar Voucher Anda Dengan Mudah</h2>
+                <p id="heroDescription" class="mb-8">Get the best offers and exchange your vouchers with just a few clicks.</p>
+                <div class="grid grid-cols-2 gap-6 sm:grid-cols-4 justify-center items-center mb-10">
+                    <div class="statistic">
+                        <i class="fas fa-users text-4xl mb-2"></i>
+                        <div class="text-2xl font-bold">10,000+</div>
+                        <div id="heroUsers">Pengguna</div>
+                    </div>
+                    <div class="statistic">
+                        <i class="fas fa-exchange-alt text-4xl mb-2"></i>
+                        <div class="text-2xl font-bold" data-lang-en="50,000+" data-lang-id="50,000+">50,000+</div>
+                        <div id="heroExchanges">Penukaran</div>
+                    </div>
+                    <div class="statistic">
+                        <i class="fas fa-coins text-4xl mb-2"></i>
+                        <div class="text-2xl font-bold" data-lang-en="1,000,000+" data-lang-id="1,000,000+">1,000,000+</div>
+                        <div id="heroCoins">Koin</div>
+                    </div>
+                    <div class="statistic">
+                        <i class="fas fa-money-bill-wave text-4xl mb-2"></i>
+                        <div class="text-2xl font-bold" data-lang-en="100,000+" data-lang-id="100,000+">100,000+</div>
+                        <div id="heroWithdrawals">Penarikan</div>
+                    </div>
+                </div>
+                <a href="#exchange" id="heroExchangeNow" class="bg-white text-blue-500 py-2 px-4 rounded-full font-bold hover:bg-gray-200 hover:text-blue-600 mt-8 sm:col-span-1 transition duration-300 ease-in-out hover-dark">Exchange Now</a>
+                <a href="#login" id="heroLogin" class="bg-blue-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 mt-8 sm:col-span-1 transition duration-300 ease-in-out hover-dark">Login</a>
+            </div>
+        </section>
+
+        <section id="features" class="py-20">
+            <div class="container mx-auto text-center">
+                <h2 id="ourFeatures" class="text-3xl font-bold mb-12">Our Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg transition duration-500 ease-in-out transform hover:scale-105">
+                        <h3 id="easyToUse" class="text-2xl font-bold mb-4" data-lang-id="Mudah Digunakan">Easy to Use</h3>
+                        <p id="easyToUseDescription">Using our platform is very easy and intuitive.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg transition duration-500 ease-in-out transform hover:scale-105">
+                        <h3 id="bestOffers" class="text-2xl font-bold mb-4">Best Offers</h3>
+                        <p id="bestOffersDescription">Get the best offers for your vouchers.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg transition duration-500 ease-in-out transform hover:scale-105">
+                        <h3 id="safeAndTrusted" class="text-2xl font-bold mb-4">Safe and Trusted</h3>
+                        <p id="safeAndTrustedDescription">Your security and privacy are our priorities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="py-20 bg-gray-200">
+            <div class="container mx-auto text-center">
+                <h2 id="howItWorksSection" class="text-3xl font-bold mb-12">How It Works</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="transition duration-500 ease-in-out transform hover:scale-105">
+                        <div class="bg-blue-500 text-white p-6 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center text-2xl font-bold">1</div>
+                        <h3 id="chooseVoucher" class="text-2xl font-bold mb-4">Choose Voucher</h3>
+                        <p id="chooseVoucherDesc">Select the voucher you want to exchange from various available options.</p>
+                    </div>
+                    <div class="transition duration-500 ease-in-out transform hover:scale-105">
+                        <div class="bg-blue-500 text-white p-6 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center text-2xl font-bold">2</div>
+                        <h3 id="enterCode" class="text-2xl font-bold mb-4">Enter Code</h3>
+                        <p id="enterCodeDesc">Enter your voucher code to start the exchange process.</p>
+                    </div>
+                    <div class="transition duration-500 ease-in-out transform hover:scale-105">
+                        <div class="bg-blue-500 text-white p-6 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center text-2xl font-bold">3</div>
+                        <h3 id="exchangeAndEnjoy" class="text-2xl font-bold mb-4">Exchange and Enjoy</h3>
+                        <p id="exchangeAndEnjoyDesc">Exchange your voucher and enjoy the exciting offers we provide.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="payment-methods" class="py-20">
+            <div class="container mx-auto">
+                <h2 id="paymentMethodsSection" class="text-3xl font-bold mb-8 text-center">Payment Methods</h2>
+                <div class="flex justify-center gap-8">
+                    <div class="flex items-center flex-col">
+                        <img src="img/dana.png" alt="Dana" class="w-16 h-16 mb-2 rounded-full" />
+                        <span>Dana</span>
+                    </div>
+                    <div class="flex items-center flex-col">
+                        <img src="img/ovo.png" alt="Ovo" class="w-16 h-16 mb-2 rounded-full" />
+                        <span>Ovo</span>
+                    </div>
+                    <div class="flex items-center flex-col">
+                        <img src="img/gopay.png" alt="Gopay" class="w-16 h-16 mb-2 rounded-full" />
+                        <span>Gopay</span>
+                    </div>
+                    <div class="flex items-center flex-col">
+                        <img src="img/faucetpay.png" alt="FaucetPay" class="w-16 h-16 mb-2 rounded-full" />
+                        <span>FaucetPay</span>
+                    </div>
+                    <div class="flex items-center flex-col">
+                        <img src="img/cwallet.png" alt="CWallet" class="w-16 h-16 mb-2 rounded-full" />
+                        <span>CWallet</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu-contact" class="py-20 bg-gray-200">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-12" id="contactUs">Contact US</h2>
+                <form id="contact-form" class="max-w-lg mx-auto">
+                    <div class="mb-4">
+                        <input type="text" id="txtName" name="name" placeholder="Your Name" class="w-full p-3 rounded border" />
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" id="txtEmail" name="email" placeholder="Your Email" class="w-full p-3 rounded border" />
+                    </div>
+                    <div class="mb-4">
+                        <textarea id="txtMessage" name="message" placeholder="Your Message" class="w-full p-3 rounded border"></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-full font-bold hover:bg-blue-600" id="btnSend">Send</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="bg-blue-600 text-white py-4">
+            <div class="container mx-auto text-center">
+                <p>&copy; 2024 <span id="footerVoucherExchange">Voucher Exchange</span>. <span id="copyRight">All Rights Reserved.</span></p>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/language.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
